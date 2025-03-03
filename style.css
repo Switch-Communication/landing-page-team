@@ -1,0 +1,161 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.cart-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.cart-container form {
+   background-color: #eee;
+   border-radius: 10px;
+   padding: 1rem;
+   width: 50%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 1rem;
+}
+
+.cart-container form .container-teams {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+}
+
+
+.cart-container form .container-teams .cart-team {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+}
+
+.score-team input {
+   width: 55px;
+   height: 75px;
+   font-size: 1.5rem;
+   text-align: center;
+   border-radius: 10px;
+   border: 1px solid #ccc;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+.score-team input:focus {
+   outline: none;
+   background-color: #f9f9f9;
+
+}
+
+.container-progress {
+   padding: 1rem;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 80%;
+   margin: auto;
+}
+
+.container-progress .percentage-team {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: inherit;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-progress .percentage-team span {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.progress-bar {
+   background: linear-gradient(to left, #24a557 0%, #bafb3c 100%);
+   width: inherit;
+   height: 7px;
+   border-radius: 10px;
+}
+
+.cart-container form .btn {
+   background-color: tomato;
+   border: none;
+   padding: 10px 15px;
+   border-radius: 10px;
+   width: 20%;
+   margin: 0 auto;
+   cursor: pointer;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem;
+   color: #fff;
+}
+
+.contianer-modal {
+   display: none;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   z-index: 22;
+   background-color: rgba(0, 0, 0, 0.5);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+
+}
+
+.contianer-modal .modal-dialog {
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 3rem;
+   width: 50%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body form {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+
+}
+
+.modal-body form div {
+   width: 100%;
+}
+
+
+.modal-body form div input {
+   width: 100%;
+   padding: 5px;
+   border-radius: 7px;
+   outline: none;
+   border: 1px solid #ccc;
+}
+
+.modal-body form .modal-footer .btn {
+   cursor: pointer;
+   background-color: tomato;
+   border: none;
+   padding: 10px 15px;
+   border-radius: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem;
+   color: #fff;
+}

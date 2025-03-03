@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cart-container">
+      <form>
+        <div class="container-teams">
+          <div class="cart-team">
+            <div class="logo">
+              <img src="./imgs/barc.png" alt="" width="60" />
+            </div>
+            <h3>FC Barcelona</h3>
+          </div>
+          <div class="score-team">
+            <label for="teamA_score"></label>
+            <input
+              type="number"
+              maxlength="2"
+              required
+              id="teamA_score"
+              oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            />
+            <label for="teamB_score"></label>
+            <input
+              type="number"
+              maxlength="2"
+              required
+              id="teamB_score"
+              oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            />
+          </div>
+          <div class="cart-team">
+            <div class="logo">
+              <img src="./imgs/osasuna.png" alt="" width="50" />
+            </div>
+            <h3>Osasuna</h3>
+          </div>
+        </div>
+        <div class="container-progress">
+          <div class="percentage-team">
+            <span>Barcelona <small>81%</small></span>
+            <span>Draw <small>11%</small></span>
+            <span>Osasuna <small>8%</small></span>
+          </div>
+          <div class="progress-bar"></div>
+        </div>
+        <button type="submit" class="btn btnSubmit">Save</button>
+      </form>
+    </div>
+
+    <div class="contianer-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form>
+              <div>
+                <label for="fname">Enter Your Name</label>
+                <input required type="text" name="fullName" id="fname" />
+              </div>
+              <div>
+                <label for="email">Enter Your Email</label>
+                <input required type="email" name="email" id="email" />
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btnSaveChange">
+                  Save Changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
